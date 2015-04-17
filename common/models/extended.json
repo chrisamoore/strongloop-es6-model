@@ -1,0 +1,10 @@
+{
+  "name": "Extended",
+  "base": "Base",
+  "idInjection": true,
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}
