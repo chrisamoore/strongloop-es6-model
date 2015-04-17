@@ -1,3 +1,4 @@
+require('babel/register');
 var loopback = require('loopback');
 var boot = require('loopback-boot');
 

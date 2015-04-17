@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "main": "server/server.js",
   "scripts": {
-    "pretest": "jshint ."
+    "pretest": "jshint .",
+    "transpile": "babel ./common/models/src/base.es6 >> ./common/models/base.js && babel ./common/models/src/extended.es6 >> ./common/models/extended.js",
+    "tdev": "npm run transpile && slc run",
+    "dev": "rm -f ./common/models/base.js ./common/models/extended.js && slc run"
   },
   "dependencies": {
+    "babel": "^5.1.10",
     "compression": "^1.0.3",
     "errorhandler": "^1.1.1",
     "loopback": "^2.8.0",
